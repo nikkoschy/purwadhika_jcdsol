@@ -1,4 +1,6 @@
 # Simple Warehouse / Stock Keeping Python Program 
+# Google slides link for documentation : https://docs.google.com/presentation/d/1CB9N17zQ6cS-5X8iX-g64dPdMO_tJuqcwePhZwwx_fc/edit?usp=drive_link
+# Presenetation video link : https://drive.google.com/file/d/1u4OzTnW2Tm2AyDA_fl-fk67pe-o0689X/view?usp=drive_link
 
 # 0.1 Importing modules
 from textwrap import dedent
@@ -49,11 +51,11 @@ def updt_list_stock(inout, list_stock_mod, list_inout):
 
     return list_stock_mod
 
-#Create Function
+#Create And Create Function
 #Called in menu 2 and 3
 #Create data in three ways :
 #1. Add into stock for existing item
-#2. Add into the data: SKU name, stock amount, harga in USD
+#2. Create new data entry: SKU name, stock amount, harga in USD
 #3. Substract from the data: As an outgoing stock (could be due to being sold/moved from warehouse)
 def input_inout_stock(inout, list_stock_mod):
     view_balance(list_stock_mod)
@@ -146,7 +148,6 @@ def main():
     is_running = True
     list_inout =[]
     list_out = []
-    menu_pick = 0
     list_stock_mod = add_total_value_column(list_stock)
 
     while is_running == True:
